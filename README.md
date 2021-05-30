@@ -2,7 +2,7 @@
 
 ## Changelog
 
-### ---- V0.1.0a ----
+### ---- V0.1.1a ----
 - **Additions**
 - Added BrainFuckInterpreter Struct
 - **Removals**

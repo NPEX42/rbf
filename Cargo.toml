@@ -1,6 +1,6 @@
 [package]
 name = "rusty_brainfck"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["George"]
 edition = "2018"
 description = "A Small, Slightly Broken BrainFuck Interpreter, Available in both no-std contexts & std contexts."

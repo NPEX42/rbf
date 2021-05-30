@@ -3,9 +3,9 @@
 ## Changelog
 
 ### ---- V0.1.1a ----
-- **Additions**
+- == **Additions** ==
 - Added BrainFuckInterpreter Struct
-- **Removals**
+- == **Removals** ==
 - None (First Version)
-- **Breaking**
+- == **Breaking** ==
 - None (First Verion)

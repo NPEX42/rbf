@@ -1,5 +1,5 @@
 [package]
-name = "rbf"
+name = "rusty_brainfck"
 version = "0.1.0"
 authors = ["George"]
 edition = "2018"

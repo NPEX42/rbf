@@ -1,4 +1,8 @@
+#[cfg(not(feature = "no_std"))]
 use std::fmt::{Display, Formatter, write};
+
+#[cfg(feature = "no_std")]
+use core::fmt::{Display, Formatter, write};
 
 
 #[cfg(feature = "tinix")]  
@@ -77,7 +81,7 @@ impl Display for BrainFuckInterpreter<'_> {
         writeln!(f, "Cell Ptr {}", self.tape_ptr);
         writeln!(f, "Current Cell {} ({})",self.tape[self.tape_ptr], self.tape[self.tape_ptr] as char);
         writeln!(f, "Program Counter: {}",self.program_ptr);
-        writeln!(f, "Current Command: {}", self.program.as_bytes()[self.program_ptr] as char);
+        writeln!(f, "Current Command: {}", self.program.as_bytes()[self.program_ptr - 1] as char);
         for idx in self.tape_ptr .. 256 {
             write!(f, "{},",self.tape[idx]);
         }

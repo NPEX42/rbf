@@ -1,6 +1,6 @@
 [package]
 name = "rusty_brainfck"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["George"]
 edition = "2018"
 description = "A Small, Slightly Broken BrainFuck Interpreter, Available in both no-std contexts & std contexts."
@@ -23,6 +23,7 @@ path = "src/lib.rs"
 [features]
 no_alloc = []
 alloc = []
-tinix = ["alloc"]
+no_std = []
+tinix = ["alloc", "no_std"]
 
 default = ["alloc"]

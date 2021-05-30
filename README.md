@@ -2,7 +2,7 @@
 
 ## Changelog
 
-### ---- V0.1.1a ----
+### ---- V0.1.1a ---- ```toml rbf = "0.1.0"```
 - == **Additions** ==
 - Added BrainFuckInterpreter Struct
 - == **Removals** ==
